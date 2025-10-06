@@ -38,9 +38,11 @@ nav {
 }
 
 .drop-items {
-  background-color: #705c4f;
+  /* background-color: #705c4f; */
   width: 100%;
   display: flex;
+  align-items: center;
+  padding: 5px;
 }
 
 nav .logo {
@@ -53,6 +55,7 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 25px;
+  padding-right: 14px;
 }
 
 nav ul li a {
@@ -695,6 +698,7 @@ footer ul li a:hover {
     flex-direction: column;
     gap: 10px;
     margin-top: 10px;
+    padding-right: 0;
   }
 
   .drop-items {
