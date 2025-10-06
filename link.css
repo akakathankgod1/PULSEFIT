@@ -102,7 +102,7 @@ nav ul li:hover::after {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7)), url(/image/Herosection.jpg);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7)), url(image/Herosection.jpg);
   background-position: center;
   background-size: cover;
 }
