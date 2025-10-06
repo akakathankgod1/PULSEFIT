@@ -910,6 +910,10 @@ footer ul li a:hover {
     align-items: center;
   }
 
+  footer{
+    display: flex;
+    flex-direction: column;
+  }
 
 
 }
