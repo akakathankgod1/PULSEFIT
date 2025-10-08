@@ -23,7 +23,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 15px 50px;
-  background: #4c2003;
+  /* background: #4c2003; */
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(4px);
   position: sticky;
@@ -94,6 +94,9 @@ nav ul li:hover::after {
   background: #ff6600;
   transition: 1s;
 }
+.span4 {
+  color: #ff6600;
+}
 
 /*HERO*/
 .hero {
@@ -105,6 +108,7 @@ nav ul li:hover::after {
   background-image: linear-gradient(rgba(4, 9, 30, 0.7)), url(image/Herosection.jpg);
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .hero h1 {
@@ -230,20 +234,23 @@ nav ul li:hover::after {
 
 
 
-.autoShow{
+.autoShow {
   animation: autoShowAnimation;
   animation-timeline: view(40% 30%);
 }
 
-@keyframes autoShowAnimation{
-  form{
+@keyframes autoShowAnimation {
+  form {
     opacity: 0;
     transform: translateY(200px) scale(0.3);
-  } to{
+  }
+
+  to {
     opacity: 1;
     transform: translateY(0) scale(1);
   }
-} 
+}
+
 /*features*/
 .features {
   display: flex;
@@ -311,15 +318,15 @@ nav ul li:hover::after {
 
 .class-box {
   color: #fff;
-  
+
   text-align: left;
   position: relative;
   flex: 1 1 300px;
   margin-top: -40px;
- 
+
   border-radius: 10px;
   overflow: hidden;
-  transition:transform 0.4s ease,box-shadow 0.4s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .class-box img {
@@ -336,11 +343,12 @@ nav ul li:hover::after {
   color: #ccc;
 }
 
-.class-box:hover{
+.class-box:hover {
   transform: translate(-8px);
- 
+
 }
-.class-box:hover img{
+
+.class-box:hover img {
   transform: scale(1.05);
 }
 
@@ -358,14 +366,14 @@ nav ul li:hover::after {
 }
 
 .trainer {
- 
+
   border-radius: 10px;
   color: #fff;
-  
+
   text-align: left;
   position: relative;
   flex: 1 1 300px;
-  
+
 }
 
 .trainer img {
@@ -599,11 +607,19 @@ nav ul li:hover::after {
 
 
 /* ===== SCHEDULE ===== */
+.schedule {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 100vw; */
+}
+
 .schedule table {
   width: 90%;
   border-collapse: collapse;
   text-align: center;
-  margin: auto;
+  /* margin: auto; */
   margin-bottom: 40px;
 }
 
@@ -639,6 +655,7 @@ nav ul li:hover::after {
 
 footer {
   background: #020202;
+  /* background-color: blue; */
   color: #fff;
   padding: 30px 10%;
   display: flex;
@@ -646,9 +663,13 @@ footer {
   flex-wrap: wrap;
 }
 
+ footer h3{
+  padding-bottom: 10px;
+  }
+
 footer ul {
   list-style: none;
-
+  /* background-color: red; */
 }
 
 footer ul li {
@@ -840,10 +861,16 @@ footer ul li a:hover {
   .about {
     flex-direction: column;
     text-align: center;
+    /* background-color: red; */
+  }
+
+  .img-card {
+    /* background-color: red; */
+    width: 90vw;
   }
 
   .about img {
-    margin-top: 20px;
+    margin-top: 10px;
     max-width: 100%;
   }
 
@@ -852,24 +879,129 @@ footer ul li a:hover {
     padding: 40px 20px;
   }
 
+  .features-box {
+    background: rgba(20, 20, 20, 0.9);
+    border: 1px solid #ff6600;
+    color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+    flex: 1 1 300px;
+    overflow: hidden;
+    transition: transform o.3s ease;
+  }
+
+  .features-box:hover {
+    transform: translate(-8px);
+    border: 1px solid #ff6600;
+  }
+
+  .fa-regular {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+
+  .fa-solid {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+
+  .features-box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .features-box p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #ccc;
+  }
+
+
+
   .classes {
     flex-direction: column;
     padding: 40px 1px;
+    padding-bottom: 0px;
+  }
+
+  /* ===== TRAINERS ===== */
+  .train {
+    /* width: 1; */
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: stretch;
+  }
+
+  .trainers {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    padding: 0px 0px;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+    background: #000
   }
 
   .trainer {
-    flex-direction: column;
-    padding: 40px 1px;
+
+    border-radius: 10px;
+    color: #fff;
+
+    text-align: left;
+    position: relative;
+    flex: 1 1 300px;
+
   }
+
+  .trainer img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .par {
+    padding: 0px 5px;
+    padding-top: 10px;
+    font-size: 0.85rem;
+    color: #ccc;
+  }
+
+  .train h2 {
+    font-size: 25px;
+  }
+
+  .trainer p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #ccc;
+  }
+
+
 
   .facilities {
     flex-direction: column;
-    padding: 40px -2px;
+    padding: 0px 2px;
+  }
+
+  .mem {
+    /* background-color: white; */
   }
 
   .plans {
     flex-direction: column;
-    padding: 40px -2px;
+    padding: 0px 2px;
+    gap: 40px;
   }
 
   .plan {
@@ -877,7 +1009,7 @@ footer ul li a:hover {
     border-radius: 10px;
     height: 100%;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     border: 1px solid #ff6600;
     align-items: center;
 
@@ -937,10 +1069,495 @@ footer ul li a:hover {
     align-items: center;
   }
 
-  footer{
+  footer {
     display: flex;
     flex-direction: column;
   }
+
+
+
+  /* ===== SCHEDULE ===== */
+
+
+  .schedule table {
+    /* width: 50%; */
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .schedule th,
+  .schedule td {
+    padding: 8px;
+    border: 1px solid #ff6600;
+  }
+
+  #connect {
+    justify-content: flex-start;
+  }
+
+  #connect .fa-brands {
+    margin-right: 30px;
+    font-size: 20px;
+  }
+
+   footer h3{
+    padding-top: 13px;
+    padding-bottom: 5px;
+  }
+
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  nav {
+    /* flex-direction: column; */
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 10px 10px;
+    /* background: #4c2003; */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* background-color: red; */
+    backdrop-filter: blur(4px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .drop .fa-solid {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    padding-right: 0;
+  }
+
+  .drop-items {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.922);
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .drop:focus .drop-items {
+    display: block;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    width: 100%;
+
+
+  }
+
+  nav ul li a:hover {
+    background-color: rgba(245, 245, 245, 0.043);
+  }
+
+  nav ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ff6600;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+
+  nav ul li:hover::after {
+    width: 50%;
+  }
+
+  .nav-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .hero {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .customer-box {
+    padding: 8px 15px;
+    border-radius: 5px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    background: rgba(50, 50, 50, 0.8);
+    border: 1px solid #ff6600;
+    width: fit-content;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  }
+
+  .customer-avatars img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-left: -5px;
+  }
+
+  .customer-avatars img:first-child {
+    margin-left: 0;
+  }
+
+  .customer-text h4 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 200;
+    color: #fff;
+  }
+
+  .customer-text p {
+    margin: 0;
+    font-size: 0.55rem;
+    color: #ccc;
+  }
+
+  .customer-avatars {
+    display: flex;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+    /* background-color: red; */
+  }
+
+  .img-card {
+    /* background-color: red; */
+    width: 90vw;
+  }
+
+  .about img {
+    margin-top: 10px;
+    max-width: 100%;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    padding: 30px 20px;
+    background: #000
+  }
+
+  .features-box {
+    background: rgba(20, 20, 20, 0.9);
+    border: 2px solid #ff6600;
+    color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+    flex: 1 1 300px;
+    overflow: hidden;
+    transition: transform o.3s ease;
+  }
+
+  .features-box:hover {
+    transform: translate(-8px);
+    border: 3px solid #ff6600;
+  }
+
+  .fa-regular {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+
+  .fa-solid {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+
+  .features-box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .features-box p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #ccc;
+  }
+
+
+
+
+  .classes {
+    display: grid;
+    justify-content: center;
+    align-items: stretch;
+    gap: 70px;
+    padding: 0px 40px;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    flex-wrap: wrap;
+    background: #000
+  }
+
+  .class-box {
+    color: #fff;
+    padding-bottom: 20px;
+    text-align: left;
+    position: relative;
+    flex: 1 1 300px;
+    margin-top: -40px;
+
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .class-box img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s ease;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .class-box p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #ccc;
+  }
+
+  .class-box:hover {
+    transform: translate(-8px);
+
+  }
+
+  .class-box:hover img {
+    transform: scale(1.05);
+  }
+
+
+  /* ===== TRAINERS ===== */
+  .train {
+    /* width: 1; */
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: stretch;
+  }
+
+  .trainers {
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    
+    gap: 20px;
+    padding: 0px 0px;
+    padding-bottom: 10px;
+  
+  }
+
+  .trainer {
+
+    border-radius: 10px;
+    color: #fff;
+
+    text-align: left;
+    position: relative;
+    flex: 1 1 300px;
+
+  }
+
+  .trainer img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .par {
+    padding: 0px 25px;
+    padding-top: 10px;
+    font-size: 0.85rem;
+    color: #ccc;
+  }
+
+  .train h2 {
+    font-size: 25px;
+  }
+
+  .trainer p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #ccc;
+  }
+
+
+
+  .facilities {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap: 19px;
+    /* flex-direction: row; */
+    /* align-items: normal; */
+    padding: 0px 2px;
+  }
+
+
+
+  .facility {
+    border-radius: 10px;
+    color: #fff;
+    /* background-color: red; */
+    text-align: left;
+    position: relative;
+    flex: 1 1 300px;
+    margin-top: 10px;
+    
+  }
+
+  .mem {
+    /* background-color: white; */
+  }
+
+  .plans {
+    /* flex-direction: column; */
+    padding: 0px 2px;
+    gap: 40px;
+  }
+
+  .plan {
+    padding: 30px;
+    border-radius: 10px;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 0px;
+    border: 2px solid #ff6600;
+    align-items: center;
+
+  }
+
+  .plan a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #ff6600;
+    padding: 14px 34px;
+    padding-bottom: 30px;
+    font-size: 13px;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+
+  }
+
+  .plan1 {
+    padding: 30px;
+    border-radius: 10px;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 30px;
+    border: 2px solid #ff6600;
+    align-items: center;
+
+  }
+
+  .plan1 a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #ff6600;
+    padding: 14px 34px;
+    padding-bottom: 30px;
+    font-size: 13px;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+
+  }
+
+  .plan a:hover {
+    border: 3px solid #ff6600;
+    background: #ff6600;
+    transition: 1s;
+  }
+
+  .plan1 a:hover {
+    border: 3px solid #ff6600;
+    background: #ff6600;
+    transition: 1s;
+  }
+
+  .reviews-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* ===== SCHEDULE ===== */
+.schedule{
+  /* background-color: red; */
+}
+
+  .schedule table {
+    /* background-color: blue; */
+    width: 90%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .schedule th,
+  .schedule td {
+    padding: 8px;
+    border: 2px solid #ff6600;
+  }
+
+  #connect {
+    justify-content: flex-start;
+  }
+
+  #connect .fa-brands {
+    margin-right: 30px;
+    font-size: 20px;
+  }
+
+
 
 
 }
