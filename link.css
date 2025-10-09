@@ -608,18 +608,15 @@ nav ul li:hover::after {
 
 /* ===== SCHEDULE ===== */
 .schedule {
-  /* background-color: red; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* width: 100vw; */
 }
 
 .schedule table {
   width: 90%;
   border-collapse: collapse;
   text-align: center;
-  /* margin: auto; */
   margin-bottom: 40px;
 }
 
@@ -655,7 +652,6 @@ nav ul li:hover::after {
 
 footer {
   background: #020202;
-  /* background-color: blue; */
   color: #fff;
   padding: 30px 10%;
   display: flex;
@@ -669,7 +665,6 @@ footer {
 
 footer ul {
   list-style: none;
-  /* background-color: red; */
 }
 
 footer ul li {
@@ -709,11 +704,6 @@ footer ul li a:hover {
 
 }
 
-/* li a fa-solid {
-  font-size: 18px;
-  margin-bottom: 15px;
-  color:#fff;
-} */
 #connect {
   display: flex;
   justify-content: space-between;
@@ -723,15 +713,11 @@ footer ul li a:hover {
 
 @media (max-width: 768px) {
   nav {
-    /* flex-direction: column; */
     align-items: center;
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     padding: 10px 10px;
-    /* background: #4c2003; */
     background-color: rgba(0, 0, 0, 0.6);
-    /* background-color: red; */
     backdrop-filter: blur(4px);
     position: sticky;
     top: 0;
@@ -772,8 +758,6 @@ footer ul li a:hover {
     padding: 10px;
     display: block;
     width: 100%;
-
-
   }
 
   nav ul li a:hover {
@@ -861,11 +845,9 @@ footer ul li a:hover {
   .about {
     flex-direction: column;
     text-align: center;
-    /* background-color: red; */
   }
 
   .img-card {
-    /* background-color: red; */
     width: 90vw;
   }
 
@@ -921,8 +903,6 @@ footer ul li a:hover {
     color: #ccc;
   }
 
-
-
   .classes {
     flex-direction: column;
     padding: 40px 1px;
@@ -931,8 +911,6 @@ footer ul li a:hover {
 
   /* ===== TRAINERS ===== */
   .train {
-    /* width: 1; */
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -987,15 +965,9 @@ footer ul li a:hover {
     color: #ccc;
   }
 
-
-
   .facilities {
     flex-direction: column;
     padding: 0px 2px;
-  }
-
-  .mem {
-    /* background-color: white; */
   }
 
   .plans {
@@ -1031,12 +1003,10 @@ footer ul li a:hover {
   .plan1 {
     padding: 30px;
     border-radius: 10px;
-    /* height: 200%; */
     width: 100%;
     margin-bottom: 30px;
     border: 1px solid #ff6600;
     align-items: center;
-
   }
 
   .plan1 a {
@@ -1074,13 +1044,9 @@ footer ul li a:hover {
     flex-direction: column;
   }
 
-
-
   /* ===== SCHEDULE ===== */
 
-
   .schedule table {
-    /* width: 50%; */
     border-collapse: collapse;
     text-align: center;
     margin-bottom: 10px;
@@ -1105,21 +1071,15 @@ footer ul li a:hover {
     padding-top: 13px;
     padding-bottom: 5px;
   }
-
-
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   nav {
-    /* flex-direction: column; */
     align-items: center;
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     padding: 10px 10px;
-    /* background: #4c2003; */
     background-color: rgba(0, 0, 0, 0.6);
-    /* background-color: red; */
     backdrop-filter: blur(4px);
     position: sticky;
     top: 0;
@@ -1160,8 +1120,6 @@ footer ul li a:hover {
     padding: 10px;
     display: block;
     width: 100%;
-
-
   }
 
   nav ul li a:hover {
@@ -1249,11 +1207,9 @@ footer ul li a:hover {
   .about {
     flex-direction: column;
     text-align: center;
-    /* background-color: red; */
   }
 
   .img-card {
-    /* background-color: red; */
     width: 90vw;
   }
 
@@ -1313,10 +1269,6 @@ footer ul li a:hover {
     line-height: 1.5;
     color: #ccc;
   }
-
-
-
-
   .classes {
     display: grid;
     justify-content: center;
@@ -1368,8 +1320,6 @@ footer ul li a:hover {
 
   /* ===== TRAINERS ===== */
   .train {
-    /* width: 1; */
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1387,10 +1337,8 @@ footer ul li a:hover {
   }
 
   .trainer {
-
     border-radius: 10px;
     color: #fff;
-
     text-align: left;
     position: relative;
     flex: 1 1 300px;
@@ -1423,36 +1371,22 @@ footer ul li a:hover {
     color: #ccc;
   }
 
-
-
   .facilities {
     display: grid;
     grid-template-columns: repeat(3, 30%);
     gap: 19px;
-    /* flex-direction: row; */
-    /* align-items: normal; */
     padding: 0px 2px;
   }
-
-
 
   .facility {
     border-radius: 10px;
     color: #fff;
-    /* background-color: red; */
     text-align: left;
     position: relative;
     flex: 1 1 300px;
     margin-top: 10px;
-    
   }
-
-  .mem {
-    /* background-color: white; */
-  }
-
   .plans {
-    /* flex-direction: column; */
     padding: 0px 2px;
     gap: 40px;
   }
@@ -1530,10 +1464,6 @@ footer ul li a:hover {
   }
 
   /* ===== SCHEDULE ===== */
-.schedule{
-  /* background-color: red; */
-}
-
   .schedule table {
     /* background-color: blue; */
     width: 90%;
@@ -1556,8 +1486,4 @@ footer ul li a:hover {
     margin-right: 30px;
     font-size: 20px;
   }
-
-
-
-
 }
