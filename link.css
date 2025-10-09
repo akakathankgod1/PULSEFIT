@@ -10,6 +10,9 @@ body {
   color: #fff;
   line-height: 1.6;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 h2 {
   text-align: center;
@@ -903,11 +906,62 @@ footer ul li a:hover {
     color: #ccc;
   }
 
-  .classes {
+.classes {
+    display: grid;
+    justify-content: center;
+    align-items: stretch;
+    gap: 100px;
+    padding: 0px 40px;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    flex-wrap: wrap;
+    background: #000
+  }
+
+  .class-box {
+    color: #fff;
+    padding-bottom: 20px;
+    text-align: left;
+    position: relative;
+    flex: 1 1 300px;
+    margin-top: -40px;
+
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .class-box img {
+    width: 110%;
+    height: auto;
+    transition: transform 0.4s ease;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .class-box p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #ccc;
+  }
+
+  .class-box:hover {
+    transform: translate(-8px);
+
+  }
+
+  .class-box:hover img {
+    transform: scale(1.05);
+  }
+
+
+
+
+  /* .classes {
     flex-direction: column;
     padding: 40px 1px;
     padding-bottom: 0px;
-  }
+  } */
 
   /* ===== TRAINERS ===== */
   .train {
@@ -1465,6 +1519,7 @@ footer ul li a:hover {
 
   /* ===== SCHEDULE ===== */
   .schedule table {
+
     width: 90%;
     border-collapse: collapse;
     text-align: center;
