@@ -749,8 +749,19 @@ footer ul li a:hover {
   justify-content: space-between;
 
 }
+.arrow {
+  background-color: #ff6600;
+  padding: 3px 3px;
+  border-radius: 100%;
+  align-items: center;
 
+}
+ 
+ .arrow .icon{
+  align-items: center;
+  margin: auto;
 
+ }
 @media (max-width: 768px) {
   nav {
     align-items: center;
