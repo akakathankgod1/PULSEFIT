@@ -789,6 +789,10 @@ footer ul li a:hover {
   .hero {
     height: auto;
     padding: 60px 20px;
+   background-image: linear-gradient(rgba(4, 9, 30, 0.7)), url(image/Herosection.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   }
 
   .hero h1 {
